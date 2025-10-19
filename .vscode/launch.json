@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "RenrenApplication",
+            "request": "launch",
+            "mainClass": "io.renren.RenrenApplication",
+            "projectName": "renren-generator"
+        },
+        {
+            "type": "java",
+            "name": "SpiritmallCouponApplication",
+            "request": "launch",
+            "mainClass": "com.wj.spiritmall.coupon.SpiritmallCouponApplication",
+            "projectName": "spiritmall-coupon"
+        },
+        {
+            "type": "java",
+            "name": "SpiritmallMemberApplication",
+            "request": "launch",
+            "mainClass": "com.wj.spiritmall.member.SpiritmallMemberApplication",
+            "projectName": "spiritmall-member"
+        },
+        {
+            "type": "java",
+            "name": "SpiritmallOrderApplication",
+            "request": "launch",
+            "mainClass": "com.wj.spiritmall.order.SpiritmallOrderApplication",
+            "projectName": "spiritmall-order"
+        },
+        {
+            "type": "java",
+            "name": "SpiritmallProductApplication",
+            "request": "launch",
+            "mainClass": "com.wj.spiritmall.product.SpiritmallProductApplication",
+            "projectName": "spiritmall-product"
+        },
+        {
+            "type": "java",
+            "name": "SpiritmallWareApplication",
+            "request": "launch",
+            "mainClass": "com.wj.spiritmall.ware.SpiritmallWareApplication",
+            "projectName": "spiritmall-ware"
+        }
+    ]
+}
