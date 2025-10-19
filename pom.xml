@@ -15,6 +15,11 @@
         <module>spiritmall-order</module>
         <module>spiritmall-product</module>
         <module>spiritmall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>spiritmall-common</module>
+        <module>spiritmall-gateway</module>
+        <module>spiritmall-third-party</module>
     </modules>
 
 

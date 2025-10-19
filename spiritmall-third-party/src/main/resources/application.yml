@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: spiritmall-third-party
+
+server:
+  port: 30000
+alibaba:
+  cloud:
+    access-key: LTAI5tMNiVxWUZEQ6ENHZ4vp
+    secret-key: FBrOtOP0NtU5PUijTG46N94iy8TFDs
+    oss:
+      endpotint: oss-cn-guangzhou.aliyuncs.com
+
+
+
+
+
+
+
+

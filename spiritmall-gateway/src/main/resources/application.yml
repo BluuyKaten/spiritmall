@@ -1,0 +1,38 @@
+server:
+  port: 88
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        # 更具体的路由放在前面
+        - id: product_route
+          uri: lb://spiritmall-product  # 建议使用lb://前缀
+          predicates:
+            - Path=/api/product/**
+          filters:
+            - RewritePath=/api/(?<segment>.*), /$\{segment}
+
+        # 通用路由放在后面
+        - id: admin_route
+          uri: lb://renren-fast
+          predicates:
+            - Path=/api/**
+          filters:
+            - RewritePath=/api/(?<segment>.*), /renren-fast/$\{segment}
+
+        # 其他路由...
+        - id: direct_route
+          uri: https://www.baidu.com
+          predicates:
+            - Path=/baidu/**
+          filters:
+            - RewritePath=/baidu/(?<segment>.*), /$\{segment}
+
+        - id: qq_route
+          uri: https://www.qq.com
+          predicates:
+            - Query=url,qq
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
