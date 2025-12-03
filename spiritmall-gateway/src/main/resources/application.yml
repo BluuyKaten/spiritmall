@@ -13,6 +13,14 @@ spring:
           filters:
             - RewritePath=/api/(?<segment>.*), /$\{segment}
 
+        # 第三方服务路由
+        - id: third_party_route
+          uri: lb://spiritmall-third-party
+          predicates:
+            - Path=/api/thirdparty/**
+          filters:
+            - RewritePath=/api/thirdparty/(?<segment>.*), /$\{segment}
+
         # 通用路由放在后面
         - id: admin_route
           uri: lb://renren-fast
@@ -22,13 +30,6 @@ spring:
             - RewritePath=/api/(?<segment>.*), /renren-fast/$\{segment}
 
         # 其他路由...
-        - id: direct_route
-          uri: https://www.baidu.com
-          predicates:
-            - Path=/baidu/**
-          filters:
-            - RewritePath=/baidu/(?<segment>.*), /$\{segment}
-
         - id: qq_route
           uri: https://www.qq.com
           predicates:
