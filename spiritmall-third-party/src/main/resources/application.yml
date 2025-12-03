@@ -3,8 +3,8 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
-#    access-key: { LTAI5tMNiVxWUZEQ6ENHZ4vp }
-#    secret-key: { FBrOtOP0NtU5PUijTG46N94iy8TFDs }
+    access-key: LTAI5tMNiVxWUZEQ6ENHZ4vp
+    secret-key: FBrOtOP0NtU5PUijTG46N94iy8TFDs
     oss:
       endpotint: oss-cn-guangzhou.aliyuncs.com
       bucket: spriitmall
